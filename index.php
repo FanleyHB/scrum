@@ -69,7 +69,7 @@ $recette = $em->getRecetteDuJour();
         <!-- Post Content Column -->
         <div class="col-lg-8">
             <div class="jumbotron bg-success m-2">
-                <h1 class="text-white">Nouveau Concept!</h1>
+                <h1 class="text-white font-weight-bold">Nouveau Concept!</h1>
                 <p class="font-weight-bold text-white">Plus de goût...Moins de Carbone!</p>
             </div>
 
