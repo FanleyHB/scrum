@@ -9,16 +9,16 @@
 namespace App\Entity;
 
 
-class Recette
+use App\Lib\Entity;
+
+class Recette extends Entity
 {
-    /**
-     * @var int
-     */
-    private $id;
+
     /**
      * @var string
      */
     private $titre;
+
     /**
      * @var int
      * Printemps = 1, Automne = 2, Ete = 3, Hiver = 4, Autre (pas d'une saison particulière) = 0
@@ -57,24 +57,6 @@ class Recette
      * @var string
      */
     private $description;
-
-    /**
-     * @return int
-     */
-    public function getId(): int
-    {
-        return $this->id;
-    }
-
-    /**
-     * @param int $id
-     * @return Recette
-     */
-    public function setId(int $id): Recette
-    {
-        $this->id = $id;
-        return $this;
-    }
 
     /**
      * @return string
