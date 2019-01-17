@@ -50,6 +50,7 @@ class Recette extends Entity
 
     /**
      * @var float
+     *  De 1 (bon marché) à 3 (cher)
      */
     private $prix;
 
@@ -57,6 +58,11 @@ class Recette extends Entity
      * @var string
      */
     private $description;
+
+    /**
+     * @var string
+     */
+    private $image;
 
     /**
      * @return string
@@ -190,6 +196,24 @@ class Recette extends Entity
     public function getDescription(): string
     {
         return $this->description;
+    }
+
+    /**
+     * @return string
+     */
+    public function getImage(): string
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param string $image
+     * @return Recette
+     */
+    public function setImage(string $image): Recette
+    {
+        $this->image = $image;
+        return $this;
     }
 
     /**
