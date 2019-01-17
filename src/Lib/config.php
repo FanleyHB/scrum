@@ -11,7 +11,7 @@ define('PDO_USER', 'root');
 define('PDO_PWD', '');
 
 define('RACINE', '/ecolo_recette/');
-//define('RACINE_ASSETS', RACINE . 'public/');
+define('RACINE_ASSETS', RACINE );
 
 //$dsn = 'mysql:dbname=formation;host=localhost;charset=utf8';
 //$user = 'root';
